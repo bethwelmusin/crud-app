@@ -1,6 +1,8 @@
 <?php
 
 // use Illuminate\Http\Request;
+
+use App\Http\Controllers\ListingController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Listing;
 
@@ -16,20 +18,16 @@ use App\Models\Listing;
 */
 
 
-Route::get('/', function(){
-    return view("listings",[
-        'heading'=>'latest listings',
-        'listings'=> Listing::all()
-    ]);
-        
+Route::get('/', [ListingController::class, 'index']  );
 
-   
-});
 
-// Route::get('/hello', function(){
 
-//     return view("hello");
-// });
+//single routing
+/* Route::get('/listings/{id}', function ($id) {
+    $listing = Listing::find($id);
+    return view('listing', compact('listing'));
+}); */
+Route::get('/listings/{id}', [ListingController::class, 'show']);
 
 
 // Route::get('/search', function(Request $request){
