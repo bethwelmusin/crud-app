@@ -14,7 +14,7 @@
     >
         <img
             class="w-48 mr-6 mb-6"
-            src="images/acme.png"
+            src="images/lg.png"
             alt=""
         />
 

@@ -12,8 +12,6 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <script src="//unpkg.com/alpinejs" defer></script>
-
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -29,11 +27,11 @@
         <title>LaraGigs | Find Laravel Jobs & Projects</title>
     </head>
     <body class="mb-48">
-        <nav class="flex justify-between items-center mb-4">
-            <a href="/"
+        {{-- <nav class="flex justify-between items-center mb-4"> --}}
+            {{-- <a href="/"
                 ><img class="w-24" src={{asset('images/d.png')}}
-            /></a>
-            <ul class="flex space-x-6 mr-6 text-lg">
+            /></a> --}}
+            {{-- <ul class="flex space-x-6 mr-6 text-lg">
                 <li>
                     <a href="register.html" class="hover:text-laravel"
                         ><i class="fa-solid fa-user-plus"></i> Register</a
@@ -45,8 +43,8 @@
                         Login</a
                     >
                 </li>
-            </ul>
-        </nav>
+            </ul> --}}
+        {{-- </nav> --}}
 
         <main>
 
